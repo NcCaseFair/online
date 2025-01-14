@@ -1,0 +1,45 @@
+@import url(https://googleapis.com/css/?poppins:whgt,SWAP=200;400;600;800);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+    background-color: #00a8f3;
+    background-size: cover;
+    background-repeat: no-repeat;
+}.dockshark{
+    position: relative;
+    display: flexbox;
+    align-items: center;
+    transform: translateY(-140px);
+}
+label{
+    position: relative;
+    bottom: -250%;
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-left-color: blue;
+    animation: rotate 1.2s linear infinite;
+
+}
+@keyframes rotate {
+    50%{
+       border-left-color:mediumblue; 
+    }
+    75%{
+        border-left-color:dodgerblue;
+    }100%{
+        transform: rotate(360deg);
+    }
+       
+}
